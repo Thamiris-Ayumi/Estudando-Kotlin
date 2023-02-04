@@ -21,6 +21,15 @@ fun main(){
     println(contaFran.titular)
     println(contaFran.numero)
     println(contaFran.saldo)
+
+    // Implementando um depósito (maneira incorreta)
+    contaAlex.saldo += 50.0
+    println(contaAlex.saldo)
+
+    // Implementando um depósito (maneira correta)
+    fun deposita(conta: Conta, valor: Double){
+        conta.saldo += valor
+    }
 }
 
 
